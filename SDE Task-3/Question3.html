@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p id="d1"></p>
+   <p id="d2"></p>
+   <p id="d3"></p>
+   <script>
+
+       const cargoHold=[1138,'space suits','parrot','instrument manual','meal packs','space tether','20 meters'];
+//a
+       cargoHold.splice(3,0,"keys");
+       document.getElementById("d1").innerHTML = "updated Array :"+cargoHold;
+//b
+       cargoHold.splice(cargoHold.indexOf("instrument manual"),1);
+       document.getElementById("d2").innerHTML = "updated Array :"+cargoHold;
+//c
+       cargoHold.splice(2,3,"cat","fob","string cheese");
+       document.getElementById("d3").innerHTML = "Updated Array :"+cargoHold; 
+   </script>
+
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script>
+    const practiceFile=[];
+    //a
+    practiceFile.push(42);
+    //b
+    practiceFile.push('"hello"');
+    practiceFile.push();
+    document.getElementById('d').innerHTML="before adding ["+practiceFile+"]";
+    //c
+    practiceFile.push(false,-4.6,'"87"');
+    document.getElementById('d1').innerHTML="after adding part c elements:["+practiceFile+"]";
+    </script>
+
+      <p id="d"></p><br>
+      <p id="d1"></p>
+  </body>
+</html>
